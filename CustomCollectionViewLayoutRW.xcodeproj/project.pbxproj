@@ -14,6 +14,8 @@
 		818CD9681E6F5DF300BF4F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818CD9661E6F5DF300BF4F00 /* LaunchScreen.storyboard */; };
 		818CD9731E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818CD9721E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWTests.swift */; };
 		818CD97E1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818CD97D1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWUITests.swift */; };
+		818CD9901E6F5FC000BF4F00 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 818CD98F1E6F5FC000BF4F00 /* AppIcon.appiconset */; };
+		818CD9921E6F600900BF4F00 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 818CD9911E6F600900BF4F00 /* Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,15 +40,17 @@
 		818CD95D1E6F5DF300BF4F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818CD95F1E6F5DF300BF4F00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		818CD9621E6F5DF300BF4F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		818CD9641E6F5DF300BF4F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		818CD9641E6F5DF300BF4F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CustomCollectionViewLayoutRW/Assets.xcassets; sourceTree = "<group>"; };
 		818CD9671E6F5DF300BF4F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		818CD9691E6F5DF300BF4F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		818CD9691E6F5DF300BF4F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CustomCollectionViewLayoutRW/Info.plist; sourceTree = "<group>"; };
 		818CD96E1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCollectionViewLayoutRWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		818CD9721E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayoutRWTests.swift; sourceTree = "<group>"; };
 		818CD9741E6F5DF300BF4F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		818CD9791E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCollectionViewLayoutRWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		818CD97D1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayoutRWUITests.swift; sourceTree = "<group>"; };
 		818CD97F1E6F5DF300BF4F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		818CD98F1E6F5FC000BF4F00 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
+		818CD9911E6F600900BF4F00 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,10 @@
 				818CD9711E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWTests */,
 				818CD97C1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWUITests */,
 				818CD95B1E6F5DF300BF4F00 /* Products */,
+				818CD9641E6F5DF300BF4F00 /* Assets.xcassets */,
+				818CD9691E6F5DF300BF4F00 /* Info.plist */,
+				818CD9911E6F600900BF4F00 /* Images */,
+				818CD98F1E6F5FC000BF4F00 /* AppIcon.appiconset */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				818CD95D1E6F5DF300BF4F00 /* AppDelegate.swift */,
-				818CD95F1E6F5DF300BF4F00 /* ViewController.swift */,
-				818CD9611E6F5DF300BF4F00 /* Main.storyboard */,
-				818CD9641E6F5DF300BF4F00 /* Assets.xcassets */,
-				818CD9661E6F5DF300BF4F00 /* LaunchScreen.storyboard */,
-				818CD9691E6F5DF300BF4F00 /* Info.plist */,
+				818CD98E1E6F5F8E00BF4F00 /* LAYOUT */,
+				818CD98D1E6F5F8900BF4F00 /* DATA */,
+				818CD98C1E6F5F8000BF4F00 /* VIEWS */,
+				818CD98B1E6F5F7A00BF4F00 /* CONTROLLERS */,
 			);
 			path = CustomCollectionViewLayoutRW;
 			sourceTree = "<group>";
@@ -123,6 +130,37 @@
 				818CD97F1E6F5DF300BF4F00 /* Info.plist */,
 			);
 			path = CustomCollectionViewLayoutRWUITests;
+			sourceTree = "<group>";
+		};
+		818CD98B1E6F5F7A00BF4F00 /* CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				818CD95F1E6F5DF300BF4F00 /* ViewController.swift */,
+			);
+			name = CONTROLLERS;
+			sourceTree = "<group>";
+		};
+		818CD98C1E6F5F8000BF4F00 /* VIEWS */ = {
+			isa = PBXGroup;
+			children = (
+				818CD9611E6F5DF300BF4F00 /* Main.storyboard */,
+				818CD9661E6F5DF300BF4F00 /* LaunchScreen.storyboard */,
+			);
+			name = VIEWS;
+			sourceTree = "<group>";
+		};
+		818CD98D1E6F5F8900BF4F00 /* DATA */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DATA;
+			sourceTree = "<group>";
+		};
+		818CD98E1E6F5F8E00BF4F00 /* LAYOUT */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LAYOUT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +273,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				818CD9921E6F600900BF4F00 /* Images in Resources */,
+				818CD9901E6F5FC000BF4F00 /* AppIcon.appiconset in Resources */,
 				818CD9681E6F5DF300BF4F00 /* LaunchScreen.storyboard in Resources */,
 				818CD9651E6F5DF300BF4F00 /* Assets.xcassets in Resources */,
 				818CD9631E6F5DF300BF4F00 /* Main.storyboard in Resources */,
@@ -359,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
