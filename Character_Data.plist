@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Ant</string>
+		<key>title</key>
+		<string>Red Fire Ant</string>
+		<key>description</key>
+		<string>Not your parents sibling!
+This bug spits burning acid!</string>
+		<key>hitPoints</key>
+		<integer>10</integer>
+		<key>attack</key>
+		<string>Acid</string>
+		<key>damage</key>
+		<string>1-3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bear</string>
+		<key>title</key>
+		<string>Obstructed Bear</string>
+		<key>description</key>
+		<string>Does a bear poo in the woods?
+It&apos;s been days for this grumpy guy!</string>
+		<key>hitPoints</key>
+		<integer>50</integer>
+		<key>attack</key>
+		<string>Grumpy Claws</string>
+		<key>damage</key>
+		<string>10-25</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Brain</string>
+		<key>title</key>
+		<string>Zombie Food</string>
+		<key>description</key>
+		<string>Guaranteed to satisfy the most voracious zombie!</string>
+		<key>hitPoints</key>
+		<integer>5</integer>
+		<key>attack</key>
+		<string>Psychic Blast</string>
+		<key>damage</key>
+		<string>10-50</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Cat</string>
+		<key>title</key>
+		<string>Sleepy Cat</string>
+		<key>description</key>
+		<string>He&apos;s just not interested.</string>
+		<key>hitPoints</key>
+		<integer>10</integer>
+		<key>attack</key>
+		<string>Purring Snore</string>
+		<key>damage</key>
+		<string>1-5</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Croc</string>
+		<key>title</key>
+		<string>Daydreaming Crocodile</string>
+		<key>description</key>
+		<string>Constantly stares into the sky!</string>
+		<key>hitPoints</key>
+		<integer>100</integer>
+		<key>attack</key>
+		<string>Hypnotic Daze, Jaw Snap</string>
+		<key>damage</key>
+		<string>5-50</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dinosaur_1</string>
+		<key>title</key>
+		<string>Armored Rex</string>
+		<key>description</key>
+		<string>Don&apos;t let his tiny arms fool you!
+The rest of him is BIG!</string>
+		<key>hitPoints</key>
+		<integer>250</integer>
+		<key>attack</key>
+		<string>Strong Bite, Jump Kick</string>
+		<key>damage</key>
+		<string>50-100</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dinosaur_2</string>
+		<key>title</key>
+		<string>Stoney Triceratops</string>
+		<key>description</key>
+		<string>Very stubborn!
+He&apos;ll only attack if threatened.</string>
+		<key>hitPoints</key>
+		<integer>500</integer>
+		<key>attack</key>
+		<string>Horn Thrust</string>
+		<key>damage</key>
+		<string>50-250</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dog</string>
+		<key>title</key>
+		<string>Scraps the Dog</string>
+		<key>description</key>
+		<string>Doesn&apos;t like cats, rats, or bats!</string>
+		<key>hitPoints</key>
+		<integer>250</integer>
+		<key>attack</key>
+		<string>Bite</string>
+		<key>damage</key>
+		<string>25-150</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dragon</string>
+		<key>title</key>
+		<string>Red Fire Dragon</string>
+		<key>description</key>
+		<string>A real blast at barbeques!
+Have the fire department
+on stand-by!</string>
+		<key>hitPoints</key>
+		<integer>500</integer>
+		<key>attack</key>
+		<string>Fire Balls</string>
+		<key>damage</key>
+		<string>100-500</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Fly</string>
+		<key>title</key>
+		<string>Flying Black Bug</string>
+		<key>description</key>
+		<string>No bugs in this program!</string>
+		<key>hitPoints</key>
+		<integer>5</integer>
+		<key>attack</key>
+		<string>Annoyance</string>
+		<key>damage</key>
+		<string>1-3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Frog</string>
+		<key>title</key>
+		<string>Toadstool Frog</string>
+		<key>description</key>
+		<string>Best defense against
+the Flying Black Bug!</string>
+		<key>hitPoints</key>
+		<integer>15</integer>
+		<key>attack</key>
+		<string>Tongue Slap</string>
+		<key>damage</key>
+		<string>2-10</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Grandma</string>
+		<key>title</key>
+		<string>Grandma Stella</string>
+		<key>description</key>
+		<string>Defeats zombies with a single swat!</string>
+		<key>hitPoints</key>
+		<integer>25</integer>
+		<key>attack</key>
+		<string>Umbrella Swat/Jab</string>
+		<key>damage</key>
+		<string>5-25</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Koala</string>
+		<key>title</key>
+		<string>Kookie Koala</string>
+		<key>description</key>
+		<string>Distracts his foes with cuteness!</string>
+		<key>hitPoints</key>
+		<integer>40</integer>
+		<key>attack</key>
+		<string>Eucalyptus Burps</string>
+		<key>damage</key>
+		<string>5-20</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Monkey</string>
+		<key>title</key>
+		<string>Curious Chimp</string>
+		<key>description</key>
+		<string>It&apos;s all fun and games
+until he throws his poo!</string>
+		<key>hitPoints</key>
+		<integer>50</integer>
+		<key>attack</key>
+		<string>Fecal Toss</string>
+		<key>damage</key>
+		<string>2-10</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mouse</string>
+		<key>title</key>
+		<string>Macky Mouse</string>
+		<key>description</key>
+		<string>Likes to hang around
+desktop computers!</string>
+		<key>hitPoints</key>
+		<integer>10</integer>
+		<key>attack</key>
+		<string>Cursor Jump</string>
+		<key>damage</key>
+		<string>2-5</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ninja</string>
+		<key>title</key>
+		<string>Ninja Nick</string>
+		<key>description</key>
+		<string>Chuck Norris wishes
+he had Nick&apos;s skills!</string>
+		<key>hitPoints</key>
+		<integer>200</integer>
+		<key>attack</key>
+		<string>Karate Chop / Drop Kick</string>
+		<key>damage</key>
+		<string>25-100</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Panda_Paddle</string>
+		<key>title</key>
+		<string>Panda Paddle</string>
+		<key>description</key>
+		<string>Spends too much time
+bouncing balls off his head!</string>
+		<key>hitPoints</key>
+		<integer>75</integer>
+		<key>attack</key>
+		<string>Head Butt</string>
+		<key>damage</key>
+		<string>10-50</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Pirahna</string>
+		<key>title</key>
+		<string>Zombie Piranha </string>
+		<key>description</key>
+		<string>One bite and you&apos;ll
+be craving brains!</string>
+		<key>hitPoints</key>
+		<integer>30</integer>
+		<key>attack</key>
+		<string>Zombie Bite</string>
+		<key>damage</key>
+		<string>50-100</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>RocketMouse</string>
+		<key>title</key>
+		<string>Rocket Mouse</string>
+		<key>description</key>
+		<string>Batman&apos;s little known sidekick!</string>
+		<key>hitPoints</key>
+		<integer>50</integer>
+		<key>attack</key>
+		<string>Vapor Blast</string>
+		<key>damage</key>
+		<string>25-50</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Shark_Ship</string>
+		<key>title</key>
+		<string>Shark Ship</string>
+		<key>description</key>
+		<string>It&apos;s a spaceship AND a shark!
+You can&apos;t get much
+better than that!</string>
+		<key>hitPoints</key>
+		<integer>150</integer>
+		<key>attack</key>
+		<string>Laser Burst</string>
+		<key>damage</key>
+		<string>50-100</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Snake</string>
+		<key>title</key>
+		<string>Ron the Rattler</string>
+		<key>description</key>
+		<string>The happiest snake there ever was!</string>
+		<key>hitPoints</key>
+		<integer>60</integer>
+		<key>attack</key>
+		<string>Venom Strike</string>
+		<key>damage</key>
+		<string>25-75</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Space_Marine</string>
+		<key>title</key>
+		<string>Space Marine</string>
+		<key>description</key>
+		<string>Loves jumping on platforms.
+Hates lava!</string>
+		<key>hitPoints</key>
+		<integer>100</integer>
+		<key>attack</key>
+		<string>Laser Stomp</string>
+		<key>damage</key>
+		<string>25-125</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Space_Monkey</string>
+		<key>title</key>
+		<string>Space Monkey</string>
+		<key>description</key>
+		<string>Space Marine&apos;s pet space chimp!</string>
+		<key>hitPoints</key>
+		<integer>50</integer>
+		<key>attack</key>
+		<string>Fecal Laser Blast</string>
+		<key>damage</key>
+		<string>10-45</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Space_Ship_1</string>
+		<key>title</key>
+		<string>Flying Putt Putt</string>
+		<key>description</key>
+		<string>Space Marine&apos;s sweet ride!</string>
+		<key>hitPoints</key>
+		<integer>150</integer>
+		<key>attack</key>
+		<string>Laser Blast</string>
+		<key>damage</key>
+		<string>10-75</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Space_Ship_2</string>
+		<key>title</key>
+		<string>Gray Alien Ship</string>
+		<key>description</key>
+		<string>The alien is gray, not the ship!</string>
+		<key>hitPoints</key>
+		<integer>200</integer>
+		<key>attack</key>
+		<string>Laser Blast</string>
+		<key>damage</key>
+		<string>25-75</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Space_Ship_3</string>
+		<key>title</key>
+		<string>Green UFO Saucer</string>
+		<key>description</key>
+		<string>Also known as an
+alien hockey puck!</string>
+		<key>hitPoints</key>
+		<integer>175</integer>
+		<key>attack</key>
+		<string>Photon Blast</string>
+		<key>damage</key>
+		<string>35-90</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Wolf</string>
+		<key>title</key>
+		<string>Dire Wolf</string>
+		<key>description</key>
+		<string>He may be dire, but he&apos;s got
+a great personality! </string>
+		<key>hitPoints</key>
+		<integer>45</integer>
+		<key>attack</key>
+		<string>Laughing Howl</string>
+		<key>damage</key>
+		<string>5-50</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Yum_Fish</string>
+		<key>title</key>
+		<string>Yum Fish</string>
+		<key>description</key>
+		<string>The Zombie Piranha&apos;s favorite food!
+Besides brains!</string>
+		<key>hitPoints</key>
+		<integer>15</integer>
+		<key>attack</key>
+		<string>Bubbles / Tail Slap</string>
+		<key>damage</key>
+		<string>1-10</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Zombie</string>
+		<key>title</key>
+		<string>Party Zombie</string>
+		<key>description</key>
+		<string>Always the death of the party!
+Don&apos;t invite him!
+Has an odd attraction to cats!</string>
+		<key>hitPoints</key>
+		<integer>40</integer>
+		<key>attack</key>
+		<string>Zombie Bite</string>
+		<key>damage</key>
+		<string>25-100</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Zombie_2</string>
+		<key>title</key>
+		<string>Zombie</string>
+		<key>description</key>
+		<string>Keep this guy away
+from your brains!</string>
+		<key>hitPoints</key>
+		<integer>35</integer>
+		<key>attack</key>
+		<string>Zombie Bite</string>
+		<key>damage</key>
+		<string>25-125</string>
+	</dict>
+</array>
+</plist>
