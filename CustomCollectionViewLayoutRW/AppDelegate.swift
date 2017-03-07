@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CustomCollectionViewLayoutRW
 //
-//  Created by Cynthia Whitlatch on 3/7/17.
+//  Created by Cynthia Strickland on 3/7/17.
 //  Copyright © 2017 Fenix Design. All rights reserved.
 //
 
@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
         return true
     }
 

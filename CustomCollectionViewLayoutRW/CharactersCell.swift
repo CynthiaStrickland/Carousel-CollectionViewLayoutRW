@@ -6,4 +6,11 @@
 //  Copyright © 2017 Fenix Design. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class CharactersCell : UICollectionViewCell {
+    
+    @IBOutlet weak var charactersImage: UIImageView!
+    @IBOutlet weak var charactersTitle: UILabel!
+    
+}
