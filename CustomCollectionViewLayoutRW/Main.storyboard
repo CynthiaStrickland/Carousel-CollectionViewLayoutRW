@@ -62,9 +62,19 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QgD-26-u1s">
-                                                    <rect key="frame" x="0.0" y="200" width="200" height="100"/>
+                                                    <rect key="frame" x="0.0" y="200" width="200" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="12"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GnT-6u-bOB">
+                                                    <rect key="frame" x="8" y="237" width="184" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="184" id="YKZ-PZ-bdy"/>
+                                                        <constraint firstAttribute="height" constant="55" id="wJP-Ag-hQ5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="12"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -73,12 +83,15 @@
                                                 <constraint firstItem="Mci-5H-M8J" firstAttribute="leading" secondItem="in8-Ub-C9z" secondAttribute="leading" id="9Q8-0h-8jN"/>
                                                 <constraint firstAttribute="height" constant="300" id="CpA-V7-Izp"/>
                                                 <constraint firstAttribute="trailing" secondItem="Mci-5H-M8J" secondAttribute="trailing" id="DAn-0e-1hx"/>
+                                                <constraint firstAttribute="trailing" secondItem="GnT-6u-bOB" secondAttribute="trailing" constant="8" id="T9u-Jd-OBJ"/>
+                                                <constraint firstItem="GnT-6u-bOB" firstAttribute="top" secondItem="QgD-26-u1s" secondAttribute="bottom" constant="8" id="bzM-NP-UjC"/>
                                                 <constraint firstAttribute="width" constant="200" id="bzk-iO-ftr"/>
                                                 <constraint firstItem="Mci-5H-M8J" firstAttribute="top" secondItem="in8-Ub-C9z" secondAttribute="top" id="g3S-KZ-GUU"/>
                                                 <constraint firstAttribute="trailing" secondItem="QgD-26-u1s" secondAttribute="trailing" id="mj3-Gz-P2m"/>
                                                 <constraint firstItem="QgD-26-u1s" firstAttribute="top" secondItem="Mci-5H-M8J" secondAttribute="bottom" id="p4Y-p9-Mni"/>
-                                                <constraint firstAttribute="bottom" secondItem="QgD-26-u1s" secondAttribute="bottom" id="pmq-Mh-BYx"/>
+                                                <constraint firstAttribute="bottom" secondItem="QgD-26-u1s" secondAttribute="bottom" constant="71" id="pmq-Mh-BYx"/>
                                                 <constraint firstItem="QgD-26-u1s" firstAttribute="leading" secondItem="in8-Ub-C9z" secondAttribute="leading" id="vJK-Vf-5B5"/>
+                                                <constraint firstItem="GnT-6u-bOB" firstAttribute="leading" secondItem="in8-Ub-C9z" secondAttribute="leading" constant="8" id="vaR-Qk-e7R"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -90,6 +103,7 @@
                                     <constraint firstItem="in8-Ub-C9z" firstAttribute="top" secondItem="iUb-XQ-IQw" secondAttribute="top" id="Vaa-db-IdT"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="characterDescription" destination="GnT-6u-bOB" id="jcy-sI-lTA"/>
                                     <outlet property="characterImage" destination="Mci-5H-M8J" id="50g-Bp-yGt"/>
                                     <outlet property="characterTitle" destination="QgD-26-u1s" id="uCy-2o-N6E"/>
                                 </connections>

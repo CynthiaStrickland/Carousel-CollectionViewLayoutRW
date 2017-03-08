@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -20,6 +21,8 @@ class DetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.tintColor = UIColor.black
         
         if let theCharacter = character {
             navigationItem.title = theCharacter.title

@@ -11,12 +11,14 @@ import UIKit
 class RoundedCharacterCell: UICollectionViewCell {
     @IBOutlet weak var characterImage: UIImageView!
     @IBOutlet weak var characterTitle: UILabel!
+    @IBOutlet weak var characterDescription: UILabel!
     
     var character: Characters? {
         didSet {
             if let theCharacter = character {
                 characterImage.image = UIImage(named: theCharacter.name)
                 characterTitle.text = theCharacter.title
+                characterDescription.text = theCharacter.description
             }
         }
     }
@@ -33,6 +35,7 @@ class RoundedCharacterCell: UICollectionViewCell {
         super.prepareForReuse()
         characterImage.image = nil
         characterTitle.text = ""
+        characterDescription.text = ""
     }
     
 }
