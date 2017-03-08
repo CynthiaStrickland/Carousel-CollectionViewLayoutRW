@@ -14,6 +14,7 @@ private let characterID = "CharacterCell"
 class MasterViewController: UICollectionViewController {
   
     let charactersData = Characters.loadCharacters()
+    var currentCard:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,14 +67,31 @@ extension MasterViewController {
 }
 
 // MARK: UICollectionViewDelegate
+
 extension MasterViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.item == currentCard {
         let character = charactersData[indexPath.item]
         performSegue(withIdentifier: detailID, sender: character)
+        }
+    }
+}
+
+// MARK: - UIScrollViewDelegate
+
+extension MasterViewController {
+    override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let layout = self.collectionView?.collectionViewLayout as! CharacterFlowLayout
+        
+        let cardSize = layout.itemSize.height + layout.minimumLineSpacing
+        let offset = scrollView.contentOffset.y
+        
+        currentCard = Int(floor((offset - cardSize / 2) / cardSize) + 1)
     }
 }
 
 // MARK: UICollectionViewDelegateFlowLayout
+
 
 //extension MasterViewController: UICollectionViewDelegateFlowLayout {
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
