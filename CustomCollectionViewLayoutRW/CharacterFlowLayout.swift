@@ -40,9 +40,10 @@ class CharacterFlowLayout: UICollectionViewFlowLayout {
     
     func changeLayoutAttributes(_ attributes: UICollectionViewLayoutAttributes) {
         
-        let collectionCenter = collectionView!.frame.size.height / 2
+        let collectionCenter = collectionView!.frame.size.height/2
         let offset = collectionView!.contentOffset.y    //Takes into account the offset of the objects
         let normalizedCenter = attributes.center.y - offset
+        
         let maxDistance = self.itemSize.height + self.minimumLineSpacing
         let distance = min(abs(collectionCenter - normalizedCenter), maxDistance)
         
@@ -53,7 +54,6 @@ class CharacterFlowLayout: UICollectionViewFlowLayout {
         
         attributes.alpha = alpha
         attributes.transform3D = CATransform3DTranslate(CATransform3DIdentity, scale, scale, 1)
-        
-        
+        attributes.zIndex = Int(alpha * 10)
     }
 }

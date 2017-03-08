@@ -26,16 +26,14 @@ class MasterViewController: UICollectionViewController {
     
     navigationController!.isToolbarHidden = true
     
-    // Refresh Control
     let refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(MasterViewController.refreshControlDidFire), for: .valueChanged)
     collectionView?.refreshControl = refreshControl
     
     let layout = collectionViewLayout as? CharacterFlowLayout
     let standardItemSize = (layout?.itemSize.width)! * (layout?.standardItemScale)!
-        //providing an estimated cell size can improve performance when sizing the cells dynamically
     layout?.estimatedItemSize = CGSize(width: standardItemSize, height: standardItemSize)
-    
+    layout?.minimumLineSpacing = -((layout?.itemSize.width)! * 0.5)
     
   }
   
@@ -51,7 +49,6 @@ class MasterViewController: UICollectionViewController {
     collectionView?.reloadData()
     collectionView?.refreshControl?.endRefreshing()
   }
-
 }
 
 
@@ -67,65 +64,56 @@ extension MasterViewController {
   }
   
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: characterID, for: indexPath) as! CharactersCell
-    
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharacterCell", for: indexPath) as! RoundedCharacterCell
     let character = charactersData[indexPath.item]
-    cell.charactersImage.image = UIImage(named: character.name)
-    cell.charactersTitle.text = character.title
+    cell.character = character
     
     return cell
-  }
+  }    
 }
 
 // MARK: UICollectionViewDelegate
 
 extension MasterViewController {
-  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let character = charactersData[indexPath.item]
-    performSegue(withIdentifier: detailID, sender: character)
-  }
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let character = charactersData[indexPath.item]
+        performSegue(withIdentifier: detailID, sender: character)
+    }
 }
 
 // MARK: UICollectionViewDelegateFlowLayout
 
-extension MasterViewController: UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let width = Int((collectionView.frame.width / columns) - (inset + spacing))
-        
-        var randomSize: Int
-        if isRandom == true {
-            randomSize = 64 * Int(arc4random_uniform(UInt32(3)) + 1)
-        } else {
-            randomSize = width
-        }
-        
-        return CGSize(width: randomSize, height: randomSize)
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        
-        return UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        
-        return spacing
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        
-        return lineSpacing
-        
-    }
-}
+//extension MasterViewController: UICollectionViewDelegateFlowLayout {
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//
+//        let width = Int((collectionView.frame.width / columns) - (inset + spacing))
+//
+//       var randomSize: Int
+//        if isRandom == true {
+//            randomSize = 64 * Int(arc4random_uniform(UInt32(3)) + 1)
+//        } else {
+//            randomSize = width
+//        }
+//
+//        return CGSize(width: width, height: width)
+//
+//    }
 
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        return UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
+//        
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return spacing
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//        return lineSpacing
+//    }
+//}
 
-
+//
 
 
 

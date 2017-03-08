@@ -22,6 +22,7 @@
 		818CD9DD1E6F85C900BF4F00 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818CD9DC1E6F85C900BF4F00 /* MasterViewController.swift */; };
 		818CD9DF1E6F85FD00BF4F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818CD9DE1E6F85FD00BF4F00 /* Main.storyboard */; };
 		818CD9E11E6F8C7B00BF4F00 /* CharacterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818CD9E01E6F8C7B00BF4F00 /* CharacterFlowLayout.swift */; };
+		818CD9E31E7094CC00BF4F00 /* RoundedCharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818CD9E21E7094CC00BF4F00 /* RoundedCharacterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		818CD9DC1E6F85C900BF4F00 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		818CD9DE1E6F85FD00BF4F00 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		818CD9E01E6F8C7B00BF4F00 /* CharacterFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterFlowLayout.swift; sourceTree = "<group>"; };
+		818CD9E21E7094CC00BF4F00 /* RoundedCharacterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCharacterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				818CD95C1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRW */,
-				818CD98E1E6F5F8E00BF4F00 /* LAYOUT */,
 				818CD9711E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWTests */,
 				818CD97C1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWUITests */,
 				818CD95B1E6F5DF300BF4F00 /* Products */,
@@ -118,6 +119,7 @@
 			children = (
 				818CD95D1E6F5DF300BF4F00 /* AppDelegate.swift */,
 				818CD98B1E6F5F7A00BF4F00 /* CONTROLLERS */,
+				818CD98E1E6F5F8E00BF4F00 /* LAYOUT */,
 				818CD98D1E6F5F8900BF4F00 /* DATA */,
 				818CD98C1E6F5F8000BF4F00 /* VIEWS */,
 			);
@@ -154,6 +156,7 @@
 		818CD98C1E6F5F8000BF4F00 /* VIEWS */ = {
 			isa = PBXGroup;
 			children = (
+				818CD9E21E7094CC00BF4F00 /* RoundedCharacterCell.swift */,
 				818CD99A1E6F629200BF4F00 /* CharactersCell.swift */,
 				818CD99C1E6F629F00BF4F00 /* GradientView.swift */,
 				818CD9DE1E6F85FD00BF4F00 /* Main.storyboard */,
@@ -177,7 +180,6 @@
 				818CD9E01E6F8C7B00BF4F00 /* CharacterFlowLayout.swift */,
 			);
 			name = LAYOUT;
-			path = CustomCollectionViewLayoutRW;
 			sourceTree = "<group>";
 		};
 		818CD9931E6F619700BF4F00 /* IMAGES */ = {
@@ -334,6 +336,7 @@
 				818CD9971E6F626100BF4F00 /* DetailViewController.swift in Sources */,
 				818CD99D1E6F629F00BF4F00 /* GradientView.swift in Sources */,
 				818CD9DD1E6F85C900BF4F00 /* MasterViewController.swift in Sources */,
+				818CD9E31E7094CC00BF4F00 /* RoundedCharacterCell.swift in Sources */,
 				818CD95E1E6F5DF300BF4F00 /* AppDelegate.swift in Sources */,
 				818CD9991E6F628200BF4F00 /* Characters.swift in Sources */,
 				818CD9E11E6F8C7B00BF4F00 /* CharacterFlowLayout.swift in Sources */,
