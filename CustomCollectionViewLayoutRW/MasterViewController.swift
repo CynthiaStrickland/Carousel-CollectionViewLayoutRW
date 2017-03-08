@@ -14,66 +14,58 @@ private let characterID = "CharacterCell"
 class MasterViewController: UICollectionViewController {
   
     let charactersData = Characters.loadCharacters()
-    let columns:CGFloat = 3.0
-    let inset:CGFloat = 8.0
-    let spacing:CGFloat = 8.0
-    let lineSpacing:CGFloat = 8.0
     
-    var isRandom = false
-    
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    navigationController!.isToolbarHidden = true
-    
-    let refreshControl = UIRefreshControl()
-    refreshControl.addTarget(self, action: #selector(MasterViewController.refreshControlDidFire), for: .valueChanged)
-    collectionView?.refreshControl = refreshControl
-    
-    let layout = collectionViewLayout as? CharacterFlowLayout
-    let standardItemSize = (layout?.itemSize.width)! * (layout?.standardItemScale)!
-    layout?.estimatedItemSize = CGSize(width: standardItemSize, height: standardItemSize)
-    layout?.minimumLineSpacing = -((layout?.itemSize.width)! * 0.5)
-    
-  }
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == detailID {
-      let detailViewController = segue.destination as! DetailViewController
-      detailViewController.character = sender as? Characters
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navigationController!.isToolbarHidden = true
+        
+        // Refresh Control
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(MasterViewController.refreshControlDidFire), for: .valueChanged)
+        collectionView?.refreshControl = refreshControl
+        
+        // Initial Flow Layout Setup
+        let layout = collectionViewLayout as! CharacterFlowLayout
+        let standardItemSize = layout.itemSize.width * layout.standardItemScale
+        layout.estimatedItemSize = CGSize(width: standardItemSize, height: standardItemSize)
+        layout.minimumLineSpacing = -(layout.itemSize.width * 0.5)
     }
-  }
-  
-  func refreshControlDidFire() {
-    isRandom = true
-    collectionView?.reloadData()
-    collectionView?.refreshControl?.endRefreshing()
-  }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == detailID {
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.character = sender as? Characters
+        }
+    }
+    
+    func refreshControlDidFire() {
+        collectionView?.reloadData()
+        collectionView?.refreshControl?.endRefreshing()
+    }
 }
 
 
 // MARK: UICollectionViewDataSource
 extension MasterViewController {
-  override func numberOfSections(in collectionView: UICollectionView) -> Int {
-    return 1
-  }
-  
-  
-  override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return charactersData.count
-  }
-  
-  override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharacterCell", for: indexPath) as! RoundedCharacterCell
-    let character = charactersData[indexPath.item]
-    cell.character = character
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
     
-    return cell
-  }    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return charactersData.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: characterID, for: indexPath) as! RoundedCharacterCell
+        let character = charactersData[indexPath.item]
+        cell.character = character
+        
+        return cell
+    }
 }
 
 // MARK: UICollectionViewDelegate
-
 extension MasterViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let character = charactersData[indexPath.item]
