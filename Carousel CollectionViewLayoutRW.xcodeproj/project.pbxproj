@@ -43,15 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		818CD95A1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCollectionViewLayoutRW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		818CD95A1E6F5DF300BF4F00 /* Carousel CollectionViewLayoutRW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carousel CollectionViewLayoutRW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		818CD95D1E6F5DF300BF4F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818CD9641E6F5DF300BF4F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		818CD9671E6F5DF300BF4F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		818CD9691E6F5DF300BF4F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CustomCollectionViewLayoutRW/Info.plist; sourceTree = "<group>"; };
-		818CD96E1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCollectionViewLayoutRWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		818CD96E1E6F5DF300BF4F00 /* Carousel CollectionViewLayoutRWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carousel CollectionViewLayoutRWTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		818CD9721E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayoutRWTests.swift; sourceTree = "<group>"; };
 		818CD9741E6F5DF300BF4F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		818CD9791E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCollectionViewLayoutRWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		818CD9791E6F5DF300BF4F00 /* Carousel CollectionViewLayoutRWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carousel CollectionViewLayoutRWUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		818CD97D1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayoutRWUITests.swift; sourceTree = "<group>"; };
 		818CD97F1E6F5DF300BF4F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		818CD98F1E6F5FC000BF4F00 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = ../AppIcon.appiconset; sourceTree = "<group>"; };
@@ -107,9 +107,9 @@
 		818CD95B1E6F5DF300BF4F00 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				818CD95A1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRW.app */,
-				818CD96E1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWTests.xctest */,
-				818CD9791E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWUITests.xctest */,
+				818CD95A1E6F5DF300BF4F00 /* Carousel CollectionViewLayoutRW.app */,
+				818CD96E1E6F5DF300BF4F00 /* Carousel CollectionViewLayoutRWTests.xctest */,
+				818CD9791E6F5DF300BF4F00 /* Carousel CollectionViewLayoutRWUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,9 +196,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		818CD9591E6F5DF200BF4F00 /* CustomCollectionViewLayoutRW */ = {
+		818CD9591E6F5DF200BF4F00 /* Carousel CollectionViewLayoutRW */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 818CD9821E6F5DF300BF4F00 /* Build configuration list for PBXNativeTarget "CustomCollectionViewLayoutRW" */;
+			buildConfigurationList = 818CD9821E6F5DF300BF4F00 /* Build configuration list for PBXNativeTarget "Carousel CollectionViewLayoutRW" */;
 			buildPhases = (
 				818CD9561E6F5DF200BF4F00 /* Sources */,
 				818CD9571E6F5DF200BF4F00 /* Frameworks */,
@@ -208,14 +208,14 @@
 			);
 			dependencies = (
 			);
-			name = CustomCollectionViewLayoutRW;
+			name = "Carousel CollectionViewLayoutRW";
 			productName = CustomCollectionViewLayoutRW;
-			productReference = 818CD95A1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRW.app */;
+			productReference = 818CD95A1E6F5DF300BF4F00 /* Carousel CollectionViewLayoutRW.app */;
 			productType = "com.apple.product-type.application";
 		};
-		818CD96D1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWTests */ = {
+		818CD96D1E6F5DF300BF4F00 /* Carousel CollectionViewLayoutRWTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 818CD9851E6F5DF300BF4F00 /* Build configuration list for PBXNativeTarget "CustomCollectionViewLayoutRWTests" */;
+			buildConfigurationList = 818CD9851E6F5DF300BF4F00 /* Build configuration list for PBXNativeTarget "Carousel CollectionViewLayoutRWTests" */;
 			buildPhases = (
 				818CD96A1E6F5DF300BF4F00 /* Sources */,
 				818CD96B1E6F5DF300BF4F00 /* Frameworks */,
@@ -226,14 +226,14 @@
 			dependencies = (
 				818CD9701E6F5DF300BF4F00 /* PBXTargetDependency */,
 			);
-			name = CustomCollectionViewLayoutRWTests;
+			name = "Carousel CollectionViewLayoutRWTests";
 			productName = CustomCollectionViewLayoutRWTests;
-			productReference = 818CD96E1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWTests.xctest */;
+			productReference = 818CD96E1E6F5DF300BF4F00 /* Carousel CollectionViewLayoutRWTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		818CD9781E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWUITests */ = {
+		818CD9781E6F5DF300BF4F00 /* Carousel CollectionViewLayoutRWUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 818CD9881E6F5DF300BF4F00 /* Build configuration list for PBXNativeTarget "CustomCollectionViewLayoutRWUITests" */;
+			buildConfigurationList = 818CD9881E6F5DF300BF4F00 /* Build configuration list for PBXNativeTarget "Carousel CollectionViewLayoutRWUITests" */;
 			buildPhases = (
 				818CD9751E6F5DF300BF4F00 /* Sources */,
 				818CD9761E6F5DF300BF4F00 /* Frameworks */,
@@ -244,9 +244,9 @@
 			dependencies = (
 				818CD97B1E6F5DF300BF4F00 /* PBXTargetDependency */,
 			);
-			name = CustomCollectionViewLayoutRWUITests;
+			name = "Carousel CollectionViewLayoutRWUITests";
 			productName = CustomCollectionViewLayoutRWUITests;
-			productReference = 818CD9791E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWUITests.xctest */;
+			productReference = 818CD9791E6F5DF300BF4F00 /* Carousel CollectionViewLayoutRWUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -278,7 +278,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 818CD9551E6F5DF200BF4F00 /* Build configuration list for PBXProject "CustomCollectionViewLayoutRW" */;
+			buildConfigurationList = 818CD9551E6F5DF200BF4F00 /* Build configuration list for PBXProject "Carousel CollectionViewLayoutRW" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -291,9 +291,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				818CD9591E6F5DF200BF4F00 /* CustomCollectionViewLayoutRW */,
-				818CD96D1E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWTests */,
-				818CD9781E6F5DF300BF4F00 /* CustomCollectionViewLayoutRWUITests */,
+				818CD9591E6F5DF200BF4F00 /* Carousel CollectionViewLayoutRW */,
+				818CD96D1E6F5DF300BF4F00 /* Carousel CollectionViewLayoutRWTests */,
+				818CD9781E6F5DF300BF4F00 /* Carousel CollectionViewLayoutRWUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -365,12 +365,12 @@
 /* Begin PBXTargetDependency section */
 		818CD9701E6F5DF300BF4F00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 818CD9591E6F5DF200BF4F00 /* CustomCollectionViewLayoutRW */;
+			target = 818CD9591E6F5DF200BF4F00 /* Carousel CollectionViewLayoutRW */;
 			targetProxy = 818CD96F1E6F5DF300BF4F00 /* PBXContainerItemProxy */;
 		};
 		818CD97B1E6F5DF300BF4F00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 818CD9591E6F5DF200BF4F00 /* CustomCollectionViewLayoutRW */;
+			target = 818CD9591E6F5DF200BF4F00 /* Carousel CollectionViewLayoutRW */;
 			targetProxy = 818CD97A1E6F5DF300BF4F00 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -519,7 +519,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.FenixDesignz.CustomCollectionViewLayoutRWTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomCollectionViewLayoutRW.app/CustomCollectionViewLayoutRW";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carousel CollectionViewLayoutRW.app/Carousel CollectionViewLayoutRW";
 			};
 			name = Debug;
 		};
@@ -534,7 +534,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.FenixDesignz.CustomCollectionViewLayoutRWTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomCollectionViewLayoutRW.app/CustomCollectionViewLayoutRW";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carousel CollectionViewLayoutRW.app/Carousel CollectionViewLayoutRW";
 			};
 			name = Release;
 		};
@@ -569,7 +569,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		818CD9551E6F5DF200BF4F00 /* Build configuration list for PBXProject "CustomCollectionViewLayoutRW" */ = {
+		818CD9551E6F5DF200BF4F00 /* Build configuration list for PBXProject "Carousel CollectionViewLayoutRW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				818CD9801E6F5DF300BF4F00 /* Debug */,
@@ -578,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		818CD9821E6F5DF300BF4F00 /* Build configuration list for PBXNativeTarget "CustomCollectionViewLayoutRW" */ = {
+		818CD9821E6F5DF300BF4F00 /* Build configuration list for PBXNativeTarget "Carousel CollectionViewLayoutRW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				818CD9831E6F5DF300BF4F00 /* Debug */,
@@ -586,7 +586,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		818CD9851E6F5DF300BF4F00 /* Build configuration list for PBXNativeTarget "CustomCollectionViewLayoutRWTests" */ = {
+		818CD9851E6F5DF300BF4F00 /* Build configuration list for PBXNativeTarget "Carousel CollectionViewLayoutRWTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				818CD9861E6F5DF300BF4F00 /* Debug */,
@@ -594,7 +594,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		818CD9881E6F5DF300BF4F00 /* Build configuration list for PBXNativeTarget "CustomCollectionViewLayoutRWUITests" */ = {
+		818CD9881E6F5DF300BF4F00 /* Build configuration list for PBXNativeTarget "Carousel CollectionViewLayoutRWUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				818CD9891E6F5DF300BF4F00 /* Debug */,
