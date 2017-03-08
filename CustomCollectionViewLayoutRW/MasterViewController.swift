@@ -30,6 +30,13 @@ class MasterViewController: UICollectionViewController {
     let refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(MasterViewController.refreshControlDidFire), for: .valueChanged)
     collectionView?.refreshControl = refreshControl
+    
+    let layout = collectionViewLayout as? CharacterFlowLayout
+    let standardItemSize = (layout?.itemSize.width)! * (layout?.standardItemScale)!
+        //providing an estimated cell size can improve performance when sizing the cells dynamically
+    layout?.estimatedItemSize = CGSize(width: standardItemSize, height: standardItemSize)
+    
+    
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
