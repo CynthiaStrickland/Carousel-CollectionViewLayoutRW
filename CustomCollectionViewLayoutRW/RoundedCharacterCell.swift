@@ -1,6 +1,6 @@
 //
 //  RoundedCharacterCell.swift
-//  CustomCollectionViewLayoutRW
+//  CarouselCollectionViewLayoutRW
 //
 //  Created by Cynthia Strickland on 3/8/17.
 //  Copyright © 2017 Fenix Design. All rights reserved.
